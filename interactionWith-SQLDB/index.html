@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="client.js"></script>
+    <script src="..\main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Bonus</title>
+  </head>
+  <body>
+    <div class="container" id="container" style="text-align: center">
+      <h1>Bonus</h1>
+      <div id="buttons">
+        <div id="insert">
+          <button type="submit" onclick="insert()">Insert</button>
+          <input
+            type="text"
+            placeholder="First Name"
+            id="firstName"
+            name="first"
+          />
+          <input
+            type="text"
+            placeholder="Last Name"
+            id="lastName"
+            name="last"
+          />
+          <input type="text" placeholder="ID (9-digits)" id="id" name="id" />
+        </div>
+        <br />
+        <div id="update">
+          <button type="submit" onclick="update()">Update</button>
+          <input
+            type="text"
+            placeholder="New First Name"
+            id="UpdateFirstName"
+            name="first"
+          />
+          <input
+            type="text"
+            placeholder="New Last Name"
+            id="UpdateLastName"
+            name="last"
+          />
+          <input
+            type="text"
+            placeholder="ID (9-digits)"
+            id="UpdateId"
+            name="id"
+          />
+        </div>
+        <br />
+        <div id="createTable">
+          <button type="submit" onclick="createTable()">Create Table</button>
+          <input type="text" placeholder="Table Name" id="TableName" />
+          <input type="text" placeholder="Field 1" id="Field1" />
+        </div>
+        <br />
+        <div id="delete">
+          <button type="submit" onclick="del()">Delete</button>
+          <input
+            type="text"
+            placeholder="ID (9-digits)"
+            id="delete-id"
+            name="id"
+          />
+        </div>
+        <br />
+        <div id="drop">
+          <button type="submit" onclick="drop()">Drop table</button>
+          <input type="text" placeholder="Table name" id="dropName" />
+        </div>
+        <br />
+        <div id="view">
+          <button
+            type="submit"
+            id="viewButton"
+            onclick="view()"
+            style="margin-left: 0"
+          >
+            View table content
+          </button>
+
+          <button
+            type="submit"
+            id="viewTableName"
+            onclick="viewall()"
+            style="margin-left: 0"
+          >
+            All table names
+          </button>
+        </div>
+        <br />
+      </div>
+      <br />
+      <div id="responseContainer">
+        <div id="responseTableView" style="padding-right: 10px"></div>
+        <br />
+        <div id="responseTableNames"></div>
+      </div>
+
+      <br />
+      <button type="submit" onclick="goto('')">Back</button>
+    </div>
+  </body>
+</html>

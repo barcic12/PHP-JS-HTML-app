@@ -1,0 +1,10 @@
+button {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 255, 0);
+}
+button:hover {
+  background-color: white;
+  color: rgb(0, 128, 43);
+}

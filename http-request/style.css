@@ -1,0 +1,7 @@
+button {
+  background-color: burlywood;
+  height: 50px;
+}
+button:hover {
+  background-color: azure;
+}

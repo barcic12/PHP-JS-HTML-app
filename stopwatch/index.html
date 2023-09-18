@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Stopwatch</title>
+    <script src="..\main.js"></script>
+    <script src="watch.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://guest3.orzila.org/stopwatch/watch.css"
+    />
+  </head>
+  <body>
+    <div
+      className="stopWatch"
+      style="border: 10px solid #ed009e; text-align: center"
+    >
+      StopWatch
+
+      <h1 id="time">00:00</h1>
+      <img
+        src="https://c.tadst.com/gfx/300x168/fb-stopwatch2.png?1"
+        alt="Stop Watch"
+      />
+
+      <div className="button-container">
+        <button id="startButton" onClick="startTimer()">play</button>
+        <button id="stopButton" onClick="stopTimer()">Stop</button>
+        <button id="resetButton" onClick="resetTimer()">Reset</button>
+      </div>
+      <button onclick="goto('')">Back</button>
+    </div>
+  </body>
+</html>
